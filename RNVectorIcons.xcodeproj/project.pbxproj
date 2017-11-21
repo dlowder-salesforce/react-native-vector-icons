@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D5DF46F1FC4C3D7003273E0 /* RNVectorIconsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBEB16C1B18CF1500B34395 /* RNVectorIconsManager.m */; };
 		5DBEB17C1B18CFF400B34395 /* RNVectorIconsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBEB16C1B18CF1500B34395 /* RNVectorIconsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2D5DF4641FC4C3CD003273E0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5DBEB14E1B18CEA900B34395 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,12 +33,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2D5DF4661FC4C3CD003273E0 /* libRNVectorIcons-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRNVectorIcons-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBEB1501B18CEA900B34395 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNVectorIcons.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBEB16B1B18CF1500B34395 /* RNVectorIconsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNVectorIconsManager.h; sourceTree = "<group>"; };
 		5DBEB16C1B18CF1500B34395 /* RNVectorIconsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNVectorIconsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2D5DF4631FC4C3CD003273E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5DBEB14D1B18CEA900B34395 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				5DBEB1501B18CEA900B34395 /* libRNVectorIcons.a */,
+				2D5DF4661FC4C3CD003273E0 /* libRNVectorIcons-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +86,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2D5DF4651FC4C3CD003273E0 /* RNVectorIcons-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D5DF46E1FC4C3CD003273E0 /* Build configuration list for PBXNativeTarget "RNVectorIcons-tvOS" */;
+			buildPhases = (
+				2D5DF4621FC4C3CD003273E0 /* Sources */,
+				2D5DF4631FC4C3CD003273E0 /* Frameworks */,
+				2D5DF4641FC4C3CD003273E0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RNVectorIcons-tvOS";
+			productName = "RNVectorIcons-tvOS";
+			productReference = 2D5DF4661FC4C3CD003273E0 /* libRNVectorIcons-tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		5DBEB14F1B18CEA900B34395 /* RNVectorIcons */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5DBEB1641B18CEA900B34395 /* Build configuration list for PBXNativeTarget "RNVectorIcons" */;
@@ -93,6 +129,10 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Joel Arvidsson";
 				TargetAttributes = {
+					2D5DF4651FC4C3CD003273E0 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					5DBEB14F1B18CEA900B34395 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -111,11 +151,20 @@
 			projectRoot = "";
 			targets = (
 				5DBEB14F1B18CEA900B34395 /* RNVectorIcons */,
+				2D5DF4651FC4C3CD003273E0 /* RNVectorIcons-tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2D5DF4621FC4C3CD003273E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D5DF46F1FC4C3D7003273E0 /* RNVectorIconsManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5DBEB14C1B18CEA900B34395 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +176,76 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2D5DF46C1FC4C3CD003273E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../React",
+					"$(SRCROOT)/../react-native/React",
+					"$(SRCROOT)/node_modules/react-native/React",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		2D5DF46D1FC4C3CD003273E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../React",
+					"$(SRCROOT)/../react-native/React",
+					"$(SRCROOT)/node_modules/react-native/React",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
 		5DBEB1621B18CEA900B34395 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -240,6 +359,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2D5DF46E1FC4C3CD003273E0 /* Build configuration list for PBXNativeTarget "RNVectorIcons-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D5DF46C1FC4C3CD003273E0 /* Debug */,
+				2D5DF46D1FC4C3CD003273E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5DBEB14B1B18CEA900B34395 /* Build configuration list for PBXProject "RNVectorIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
